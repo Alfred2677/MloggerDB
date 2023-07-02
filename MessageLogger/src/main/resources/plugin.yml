@@ -1,0 +1,16 @@
+name: MessageLogger
+version: 1.0
+main: me.alfred.messagelogger.MessageLogger
+api-version: 1.17
+description: A plugin to log player messages and commands
+author: Alfred
+commands:
+  mlogs:
+    description: View player message logs
+    usage: /mlogs <player> [page]
+    permission: messagelogger.viewlogs
+    aliases: [ml, ms, mlog]
+permissions:
+  messagelogger.viewlogs:
+    description: Allows players to view message logs
+    default: op
